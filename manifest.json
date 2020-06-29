@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "Short Fingers",
+    "version": "0.0.2",
+  
+    "description": "An assistive Firefox add-on to help folks with short fingers that also want to add all of the President's merch to their cart. Whoever he may be.",
+  
+    "icons": {
+      "128": "short_fingers_128.png",
+      "96": "short_fingers_98.png",
+      "64": "short_fingers_64.png"
+    },
+
+    "permissions": [
+        "storage"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["*://shop.donaldjtrump.com/*"],
+        "js": ["short_fingers.js"]
+      }
+    ]
+  
+  }
